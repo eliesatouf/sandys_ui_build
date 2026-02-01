@@ -1,0 +1,1 @@
+import{q as u,h as i,j as a,v as l}from"./Dx7AnRA8.js";function c(t){var r=l(0);return function(){return arguments.length===1?(i(r,a(r)+1),arguments[0]):(a(r),t())}}function v(t,r){var e=t.$$events?.[r.type],s=u(e)?e.slice():e==null?[]:[e];for(var n of s)n.call(this,r)}export{v as b,c as r};
