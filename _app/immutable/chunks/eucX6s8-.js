@@ -1,1 +1,0 @@
-import{h as u,j as a,x as i,y as l}from"./Dd-IV6o2.js";function c(t){var r=i(0);return function(){return arguments.length===1?(u(r,a(r)+1),arguments[0]):(a(r),t())}}function f(t,r){var e=t.$$events?.[r.type],s=l(e)?e.slice():e==null?[]:[e];for(var n of s)n.call(this,r)}export{f as b,c as r};
