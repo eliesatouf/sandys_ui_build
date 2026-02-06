@@ -1,0 +1,1 @@
+import{e as u,h as a,q as i,v as l}from"./DkKSe-uF.js";function c(t){var e=i(0);return function(){return arguments.length===1?(u(e,a(e)+1),arguments[0]):(a(e),t())}}function v(t,e){var r=t.$$events?.[e.type],s=l(r)?r.slice():r==null?[]:[r];for(var n of s)n.call(this,e)}export{v as b,c as r};
