@@ -1,0 +1,1 @@
+import{e as o,h as a,o as u,q as i}from"./5-2i0l-6.js";function c(t){var e=u(0);return function(){return arguments.length===1?(o(e,a(e)+1),arguments[0]):(a(e),t())}}function f(t,e){var r=t.$$events?.[e.type],s=i(r)?r.slice():r==null?[]:[r];for(var n of s)n.call(this,e)}export{f as b,c as r};
