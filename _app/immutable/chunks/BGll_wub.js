@@ -1,1 +1,0 @@
-import{Y as u,G as _,Z as o,D as t,_ as g,a0 as i,L as l,J as d,a1 as p,a2 as m}from"./DPnowg08.js";function E(n,r){let a=null,f=t;var s;if(t){a=p;for(var e=m(document.head);e!==null&&(e.nodeType!==g||e.data!==n);)e=i(e);if(e===null)l(!1);else{var y=i(e);e.remove(),d(y)}}t||(s=document.head.appendChild(u()));try{_(()=>r(s),o)}finally{f&&(l(!0),d(a))}}export{E as h};
