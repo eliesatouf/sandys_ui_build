@@ -1,1 +1,0 @@
-import{Y as u,H as _,Z as o,E as t,_ as g,a0 as i,M as l,K as d,a1 as p,a2 as E}from"./DfHW_7Pg.js";function v(n,r){let a=null,f=t;var s;if(t){a=p;for(var e=E(document.head);e!==null&&(e.nodeType!==g||e.data!==n);)e=i(e);if(e===null)l(!1);else{var y=i(e);e.remove(),d(y)}}t||(s=document.head.appendChild(u()));try{_(()=>r(s),o)}finally{f&&(l(!0),d(a))}}export{v as h};
