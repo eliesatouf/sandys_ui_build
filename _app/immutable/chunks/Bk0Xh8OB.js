@@ -1,1 +1,0 @@
-import{e as u,g as a,v as i,w as l}from"./DfHW_7Pg.js";function c(t){var e=i(0);return function(){return arguments.length===1?(u(e,a(e)+1),arguments[0]):(a(e),t())}}function v(t,e){var r=t.$$events?.[e.type],s=l(r)?r.slice():r==null?[]:[r];for(var n of s)n.call(this,e)}export{v as b,c as r};
