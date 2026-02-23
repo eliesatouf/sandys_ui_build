@@ -1,1 +1,0 @@
-import{h as u,g as a,q as i,v as l}from"./BWwUmJhg.js";function c(t){var r=i(0);return function(){return arguments.length===1?(u(r,a(r)+1),arguments[0]):(a(r),t())}}function v(t,r){var e=t.$$events?.[r.type],s=l(e)?e.slice():e==null?[]:[e];for(var n of s)n.call(this,r)}export{v as b,c as r};
