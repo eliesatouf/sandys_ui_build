@@ -1,0 +1,15 @@
+import"../chunks/DsnmJJEf.js";import"../chunks/U_Ut6-Vg.js";import{o as c}from"../chunks/DhNbGIhk.js";import{p as l,b as p}from"../chunks/DPnowg08.js";import{i as d}from"../chunks/CD0QhK3w.js";import{g as n}from"../chunks/BGL9u3ZF.js";import"../chunks/VWaDGczM.js";import{u as m}from"../chunks/BqiUSn3l.js";function S(g,s){l(s,!1),c(()=>{a()});async function a(){const e=new URLSearchParams(window.location.search),i=e.get("success"),t=e.get("token");if(console.log("Processing auth from URL params:",{success:i,token:t?"present":"missing"}),i==="true"&&t)try{localStorage.setItem("token",t);const o={name:e.get("name")||"",email:e.get("email")||"",id:e.get("id")||"",isAuthenticated:!0,roles:["ROLE_USER"],avatar:e.get("avatar")||null};Object.assign(m.user,o),localStorage.setItem("user",JSON.stringify(o)),window.opener&&!window.opener.closed?(console.log("Sending message to opener"),window.opener.postMessage({type:"GOOGLE_AUTH_SUCCESS",token:t,user:o},"*"),document.body.innerHTML=`
+                        <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column; font-family: system-ui; text-align: center; padding: 20px;">
+                            <div style="background: #4CAF50; color: white; border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; font-size: 30px; margin-bottom: 20px;">✓</div>
+                            <h2 style="margin-bottom: 10px;">Login Successful!</h2>
+                            <p style="color: #666; margin-bottom: 20px;">You can close this window and return to the app.</p>
+                            <button onclick="window.close()" style="background: #4CAF50; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Close Window</button>
+                        </div>
+                    `):n("/",{replaceState:!0})}catch(o){console.error("Auth error:",o),r(o.message)}else e.get("error")?r(e.get("error")):n("/login")}function r(e){window.opener&&!window.opener.closed?(window.opener.postMessage({type:"GOOGLE_AUTH_ERROR",error:e},"*"),document.body.innerHTML=`
+                <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column; font-family: system-ui; text-align: center; padding: 20px;">
+                    <div style="background: #f44336; color: white; border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; font-size: 30px; margin-bottom: 20px;">✗</div>
+                    <h2 style="margin-bottom: 10px;">Login Failed</h2>
+                    <p style="color: #666; margin-bottom: 20px;">${e}</p>
+                    <button onclick="window.close()" style="background: #f44336; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Close Window</button>
+                </div>
+            `):n(`/login?error=${encodeURIComponent(e)}`)}d(),p()}export{S as component};
