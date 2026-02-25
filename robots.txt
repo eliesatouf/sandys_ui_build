@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+Allow: /menu
+Allow: /offers
+Allow: /story
+Allow: /contact
+Disallow: /api/
+Disallow: /checkout/
+Disallow: /profile/
+Disallow: /admin/
+
+# Point Google to static content
+Sitemap: https://www.sandyscup.com/sitemap-index.xml
+
+# Tell Google it's okay to render JavaScript (but give hints)
+User-agent: Googlebot
+Allow: /
